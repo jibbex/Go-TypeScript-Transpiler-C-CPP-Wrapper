@@ -4,6 +4,7 @@
 GO := go
 BUILD_FLAGS := -buildmode=c-shared
 OUTPUT_LIB := libts_transpiler.so
+OUTPUT_HEADER := libts_transpiler.h
 SRC := transpiler.go
 
 .PHONY: all deps build clean test bench install help
@@ -35,8 +36,11 @@ bench:
 
 ## Install library to system path (requires sudo)
 install:
+	@echo "Installing shared library..."
 	@sudo install -m 755 $(OUTPUT_LIB) /usr/local/lib/
 	@echo "Installed to /usr/local/lib"
+	@sudo install -m 644 $(OUTPUT_HEADER) /usr/local/include/
+	@echo "Installed header to /usr/local/include"
 
 ## Show help
 help:
