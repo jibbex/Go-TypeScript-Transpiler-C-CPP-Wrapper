@@ -1,4 +1,4 @@
-# Go TypeScript Transpiler Wrapper
+# Go TypeScript Transpiler C/C++ Wrapper
 
 A high-performance Go wrapper around [esbuild](https://esbuild.github.io/) for transpiling TypeScript to JavaScript, compiled as a C-compatible shared library for integration with C/C++ projects. Ideal for embedding in applications using QuickJS or other JavaScript runtimes.
 
