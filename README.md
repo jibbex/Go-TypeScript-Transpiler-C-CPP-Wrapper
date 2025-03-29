@@ -24,7 +24,7 @@ go get github.com/evanw/esbuild/pkg/api
 
 2. Clone this repository:
 ```bash
-git clone https://github.com/yourusername/go-ts-transpiler.git
+git clone https://github.com/jibbex/Go-TypeScript-Transpiler-C-CPP-Wrapper.git
 cd go-ts-transpiler
 ```
 
